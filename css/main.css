@@ -1,0 +1,93 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #9b9999;
+  padding: 0 10vw;
+}
+header figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 80%;
+}
+header figure p {
+  display: inline;
+  margin-left: 15px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium';
+  letter-spacing: 3px;
+}
+header nav {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+header nav ul {
+  font-size: 16px;
+  font-family: monospace;
+  letter-spacing: 2px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+header nav ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+header nav ul li {
+  margin-left: 20px;
+}
+header nav form {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 40%;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+header nav form img {
+  height: 90%;
+}
+header nav form input {
+  color: white;
+  width: 80%;
+  height: 70%;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+header nav form input::placeholder {
+  color: white;
+  font-family: monospace;
+}
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 60vw 40vw;
+  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-areas: "header header" "main section" "footer footer";
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+  border: 1px solid red;
+}
+section {
+  grid-area: section;
+  border: 1px solid red;
+}
+footer {
+  grid-area: footer;
+  border: 1px solid red;
+}

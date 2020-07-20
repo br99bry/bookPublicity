@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-areas: "header header"
+                        "main section"
+                        "footer footer";
+}
+
+header{
+    grid-area: header;
+    //border: @config-testBorder;
+}
+
+main{
+    grid-area: main;
+    border: @config-testBorder;
+}
+
+section{
+    grid-area: section;
+    border: @config-testBorder;
+}
+
+footer{
+    grid-area: footer;
+    border: @config-testBorder;
+}

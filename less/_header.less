@@ -1,0 +1,82 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: @color-header;
+    padding: 0 10vw;
+}
+
+header figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 80%;
+    //border: @config-testBorder;
+
+    & p{
+        display: inline;
+        margin-left: 15px;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium';
+        letter-spacing: 3px;
+    }
+}
+
+header nav{
+    width: 40%;
+    height: 80%;
+    //border: @config-testBorder;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    & ul{
+        font-size: 16px;
+        font-family: monospace;
+        letter-spacing: 2px;
+        margin: 0;
+       list-style: none; 
+       display: flex;
+    
+        & li:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+       & li{
+           margin-left: 20px;
+       }
+
+    }
+
+    & form {
+        border: @config-testBorder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 40%;
+        margin-left: 20px;
+        border-radius: 10px;
+        border: 2px solid white;
+
+        & img{
+            height: 90%;
+        }
+        & input{
+            color: white;
+            width: 80%;
+            height: 70%;
+            padding: 5px 10px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            &::placeholder{
+                color: white;
+                font-family: monospace;
+            }
+        }
+    }
+}
