@@ -81,11 +81,9 @@ header {
 }
 main {
   grid-area: main;
-  border: 1px solid red;
 }
 section {
   grid-area: section;
-  border: 1px solid red;
 }
 footer {
   grid-area: footer;
@@ -117,4 +115,57 @@ footer ul li {
 }
 footer ul li:hover {
   border-bottom: 2px solid white;
+}
+main {
+  background-color: #eceff1;
+  padding: 10vh 8vw 10vh 20vw;
+}
+main p:nth-of-type(1) {
+  font-size: 27px;
+  font-family: monospace;
+  color: #161010;
+}
+main p:nth-of-type(2) {
+  letter-spacing: 2px;
+  line-height: 22px;
+  font-size: 18px;
+}
+.button-container {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #429fbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+}
+.button-container:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+.button-container img {
+  width: 15%;
+  height: 95%;
+}
+main button {
+  width: 80%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+main button:hover {
+  cursor: pointer;
+}
+section {
+  background-color: #eceff1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+section img {
+  margin-left: 5%;
+  width: 50%;
+  height: 70%;
+  border-radius: 12px;
 }
