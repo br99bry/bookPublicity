@@ -4,6 +4,7 @@ header{
     align-items: center;
     color: white;
     background-color: @color-header;
+    padding: 0 10vw;
 }
 
 header figure{
@@ -12,7 +13,7 @@ header figure{
     align-items: center;
     width: 10%;
     height: 80%;
-    border: @config-testBorder;
+    //border: @config-testBorder;
 
     & p{
         display: inline;
@@ -26,7 +27,7 @@ header figure{
 header nav{
     width: 40%;
     height: 80%;
-    border: @config-testBorder;
+    //border: @config-testBorder;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -51,18 +52,31 @@ header nav{
     }
 
     & form {
-        //border: @config-testBorder;
+        border: @config-testBorder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 40%;
         height: 40%;
         margin-left: 20px;
+        border-radius: 10px;
+        border: 2px solid white;
 
+        & img{
+            height: 90%;
+        }
         & input{
+            color: white;
             width: 80%;
             height: 70%;
-            padding: 5px 5px;
+            padding: 5px 10px;
             border: none;
-            border-radius: 10px;
-            border: 1px solid blue;
+            outline: none;
+            background-color: transparent;
+            &::placeholder{
+                color: white;
+                font-family: monospace;
+            }
         }
     }
 }
